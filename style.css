@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Source Code Pro";  
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Source Code Pro";
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 8rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: 5;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Nav bar */ 
+
+.header {
+    padding: 0;
+}
+
+.navbar {
+    background-color: #cfd3ce;
+}
+
+.navbar-brand {
+    background-color: #fff;
+}
+
+
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: "Source Code Pro";
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Download buttons */
+
+.buttons {
+    margin-right: 7rem;
+}
+
+
+.download-button {
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+/* Main section */
+
+
+
+.bg-white {
+    background-color: #fff;
+    color: #2A98FF; 
+    text-align: right;
+    padding: 10rem 1rem;
+}
+
+.bg-white h2 {
+    letter-spacing: 10px;
+}
+
+.bg-blue {
+    background-color: #2A98FF;
+    color: #fff;
+    letter-spacing: 10px;
+    padding: 20rem 1.5rem;
+    text-align: left;
+}
+
+/* Services */
+
+#services p {
+    text-align: left;
+}
+
+#services i {
+    padding: 1.5rem;
+}
+
+
+
+
+
+
+
+

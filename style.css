@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Source Code Pro";  
-    text-align: center;
+    font-family: "Raleway";  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
 h1, h2, h3 {
-    font-family: "Source Code Pro";
+    font-family: "Raleway";
     font-weight: bold;
 }
 
@@ -24,6 +26,11 @@ h2 {
     letter-spacing: 5;
 }
 
+h3 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
 a, a:visited, a:hover{
     text-decoration: none;
     color: #fff;
@@ -35,29 +42,23 @@ a, a:visited, a:hover{
     padding: 0;
 }
 
-.navbar {
-    background-color: #cfd3ce;
-}
-
 .navbar-brand {
     background-color: #fff;
 }
-
-
 
 .nav-item {
     padding: 0 18px;
 }
 
 .nav-link {
-    font-family: "Source Code Pro";
+    font-family: "Raleway";
     font-weight: 600;
     font-size: 1.2rem;
     
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #2A98FF;
 }
 
 /* Download buttons */
@@ -70,7 +71,10 @@ a, a:visited, a:hover{
 .download-button {
     margin-top: 2rem;
     margin-right: 1rem;
+    
 }
+
+
 
 /* Main section */
 
@@ -79,8 +83,7 @@ a, a:visited, a:hover{
 .bg-white {
     background-color: #fff;
     color: #2A98FF; 
-    text-align: right;
-    padding: 10rem 1rem;
+    padding: 11% 5% 0;
 }
 
 .bg-white h2 {
@@ -91,9 +94,17 @@ a, a:visited, a:hover{
     background-color: #2A98FF;
     color: #fff;
     letter-spacing: 10px;
-    padding: 20rem 1.5rem;
-    text-align: left;
+    padding: 2% 5% 14%;
+    
 }
+
+/* About us */
+
+#about-us {
+    margin: 20% 10%;
+}
+
+
 
 /* Services */
 
@@ -101,12 +112,33 @@ a, a:visited, a:hover{
     text-align: left;
 }
 
-#services i {
+.services-div {
+    text-align: center;
+    margin: 5% auto;
+    padding: 0 5%;
+    
+}
+
+.services-icon, .services-icon::before {
     padding: 1.5rem;
 }
 
+/* Projects Section */
 
+#projects {
+    text-align: center;
+}
 
+.projects-img {
+    width: 50%!important;
+    margin: 2% auto;
+    border-radius: 33px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
 
 
 

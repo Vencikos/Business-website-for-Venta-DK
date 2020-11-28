@@ -172,8 +172,14 @@ a, a:visited, a:hover{
     border-radius: 33px;
 }
 
-.project-img h3 {
-    padding-bottom: 0;
+.card h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.card p {
+    font-size: 1.3rem;
 }
 
 .carousel-control-next,
@@ -183,13 +189,15 @@ a, a:visited, a:hover{
 
 .left {
     margin-left: -200px;
-    margin-bottom: 60px;
+  
 }
 
 .right {
     margin-right: -200px;
-    margin-bottom: 60px;
+  
 }
+
+/* Projects Carousel */
 
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
@@ -206,7 +214,7 @@ a, a:visited, a:hover{
     display: flex;
 }
 
-/* display 3 */
+/* display 3 items */
 @media (min-width: 768px) {
     
     .carousel-inner .carousel-item-right.active,
@@ -224,7 +232,6 @@ a, a:visited, a:hover{
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
-
 
 /* Footer */
 

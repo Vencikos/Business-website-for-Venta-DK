@@ -134,40 +134,67 @@
 
     <section id="projects">
       <h3 class="section-title">Изпълнени обекти</h3>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
-        <div class="carousel-inner">
-          <div class="carousel-item active project-img">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="Images/Projects images/gerson-repreza-CepDpEiALqM-unsplash.jpg" class="d-block w-100 projects-img" alt="...">
-                <h3>Хотел "Placeholder"</h3>
-                <h4>Бургас</h4>
-              </div>
-
-              <div class="col-lg-4">
-                <img src="Images/Projects images/lance-anderson-QdAAasrZhdk-unsplash.jpg" class="d-block w-100 projects-img" alt="...">
-                <h3>Хотел "Placeholder"</h3>
-                <h4>Бургас</h4>
-              </div>
-
-              <div class="col-lg-4">
-                <img src="Images/Projects images/science-in-hd-pAzSrQF3XUQ-unsplash.jpg" class="d-block w-100 projects-img" alt="...">
-                <h3>Хотел "Placeholder"</h3>
-                <h4>Бургас</h4>
-              </div>
+      <div class="container text-center my-3">
+        <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+        <div class="row mx-auto my-auto">
+            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="img-fluid" src="http://placehold.it/380?text=1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="img-fluid" src="http://placehold.it/380?text=2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="img-fluid" src="http://placehold.it/380?text=3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="img-fluid" src="http://placehold.it/380?text=4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="img-fluid" src="http://placehold.it/380?text=5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="img-fluid" src="http://placehold.it/380?text=6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-          </div>
-
         </div>
-        <a class="carousel-control-prev carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon left" aria-hidden="true"></span>
-          <span class="sr-only left">Previous</span>
-        </a>
-        <a class="carousel-control-next carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        <h5 class="mt-2">Advances one slide at a time</h5>
+    </div>
+    </div>
     </section>
 
     <!-- Contact Section -->
@@ -288,6 +315,6 @@
       </div>
 
     </footer>
-
+  <script src="carousel.js"></script>
   </body>
 </html>

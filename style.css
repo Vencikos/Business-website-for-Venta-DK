@@ -80,11 +80,7 @@ a, a:visited, a:hover{
     margin-right: 1rem; 
 }
 
-
-
 /* Main section */
-
-
 
 .bg-white {
     background-color: #fff;
@@ -134,13 +130,14 @@ a, a:visited, a:hover{
        margin-right: 1rem; 
     }
 }
-/* About us */
+
+/* About us section*/
 
 #about-us {
     margin: 10% 20%;
 }
 
-/* Services */
+/* Services Section */
 
 #services {
    background-color: #2A98FF;
@@ -193,6 +190,41 @@ a, a:visited, a:hover{
     margin-right: -200px;
     margin-bottom: 60px;
 }
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
 
 /* Footer */
 

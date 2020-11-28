@@ -7,6 +7,7 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" href="Images/favicon (3).ico" type="image/x-icon">
+
       <!-- CSS styles -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
@@ -62,8 +63,8 @@
           <div class="col-lg-12 bg-blue">
             <h2>КЛИМАТ В РАВНОВЕСИЕ </h2>
             <div class="buttons">
-              <button type="button" class="btn btn-dark download-button"><a href="#about-us">More Info</a></button>
-              <button type="button" class="btn btn-dark download-button"><a href="#contact">Contact Us</a></button>  
+              <button type="button" class="btn btn-dark btn-lg download-button"><a href="#about-us">За Нас</a></button>
+              <button type="button" class="btn btn-dark btn-lg download-button"><a href="#contact">Контакт</a></button>  
             </div>
           </div>
         </div>
@@ -73,7 +74,7 @@
     <!-- About Section -->    
 
     <section id="about-us">
-    <h3>За Нас</h3>
+    <h3 class="section-title">За Нас</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Ut lectus arcu bibendum at varius. Augue mauris augue neque gravida in fermentum. Turpis egestas maecenas pharetra convallis posuere.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Ut lectus arcu bibendum at varius. Augue mauris augue neque gravida in fermentum. Turpis egestas maecenas pharetra convallis posuere.</p>
     </section>
@@ -82,6 +83,7 @@
 
     <section id="services">
     <div class="container">
+      <h3 class="section-title">Услуги</h3>
       <div class="row">
         <div class="col-lg-6 services-div">
           <i class="fas fa-pencil-ruler fa-3x services-icon"></i>
@@ -131,37 +133,38 @@
     <!-- Projects Section -->
 
     <section id="projects">
+      <h3 class="section-title">Изпълнени обекти</h3>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
         <div class="carousel-inner">
           <div class="carousel-item active project-img">
             <div class="row">
               <div class="col-lg-4">
                 <img src="Images/Projects images/gerson-repreza-CepDpEiALqM-unsplash.jpg" class="d-block w-100 projects-img" alt="...">
-                <h2>Хотел "Placeholder"</h2>
-                <h3>Бургас</h3>
+                <h3>Хотел "Placeholder"</h3>
+                <h4>Бургас</h4>
               </div>
 
               <div class="col-lg-4">
                 <img src="Images/Projects images/lance-anderson-QdAAasrZhdk-unsplash.jpg" class="d-block w-100 projects-img" alt="...">
-                <h2>Хотел "Placeholder"</h2>
-                <h3>Бургас</h3>
+                <h3>Хотел "Placeholder"</h3>
+                <h4>Бургас</h4>
               </div>
 
               <div class="col-lg-4">
                 <img src="Images/Projects images/science-in-hd-pAzSrQF3XUQ-unsplash.jpg" class="d-block w-100 projects-img" alt="...">
-                <h2>Хотел "Placeholder"</h2>
-                <h3>Бургас</h3>
+                <h3>Хотел "Placeholder"</h3>
+                <h4>Бургас</h4>
               </div>
             </div>
           </div>
 
         </div>
         <a class="carousel-control-prev carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="carousel-control-prev-icon left" aria-hidden="true"></span>
+          <span class="sr-only left">Previous</span>
         </a>
         <a class="carousel-control-next carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -174,14 +177,116 @@
     </section>
     
     <!-- Footer Section -->
+  
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    
+      <!-- Footer Links -->
+    
+      <div class="container text-center text-md-left">
+        <div class="row">
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <div class="col-md-3 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Links -->
 
-    <footer>
-      <div class="social-icons">
+            <h5 class="font-weight-bold text-uppercase mb-4">За Нас</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a href="#about-us" class="menu-link">За Нас</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="#services" class="menu-link">Услуги</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="#projects" class="menu-link">Проекти</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="#contact" class="menu-link">Контакт</a>
+                </p>
+              </li>
+            </ul>
+    
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Contact details -->
+    
+            <h5 class="font-weight-bold text-uppercase mb-4">Адрес</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i> Бургас, к-с"Братя Миладинови", бл.42, партер</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i> office@venta.bg</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> + 359 56 801796</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-print mr-3"></i> + 359 56 811796</p>
+              </li>
+           </ul>
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <div class="col-md-3 col-lg-3 text-center mx-auto my-4">
+    
+            <!-- Social buttons -->
 
+            <h5 class="font-weight-bold text-uppercase mb-4">За връзка</h5>
+    
+            <!-- Facebook -->
+
+            <a type="button" class="btn-floating btn-fb">
+              <i class="fab fa-facebook-square fa-2x social-icon"></i>
+            </a>
+
+            <!-- Twitter -->
+
+            <a type="button" class="btn-floating btn-tw">
+              <i class="fab fa-twitter-square fa-2x social-icon"></i>
+            </a>
+            
+            <!-- Whats App -->
+
+            <a type="button" class="btn-floating btn-gplus">
+              <i class="fab fa-whatsapp-square fa-2x social-icon"></i>
+            </a>
+            
+            <!-- Viber -->
+
+            <a type="button" class="btn-floating btn-dribbble">
+              <i class="fab fa-viber fa-2x social-icon"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-text">
-
+     
+      <!-- Copyright -->
+    
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://vencikos.github.io/FCC-Portfolio-Page/" class="menu-link"> Vencislav Kostadinov</a>
       </div>
+
     </footer>
 
   </body>

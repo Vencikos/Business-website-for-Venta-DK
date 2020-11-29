@@ -104,7 +104,32 @@ a, a:visited, a:hover{
     padding-left: 15%;
 }
 
-@media screen and (max-width: 430px) {
+@media (max-width: 1000px) {
+    #main-page {
+        text-align: center;
+    }
+
+    .buttons {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .download-button {
+       margin: 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #main-page h1 {
+        font-size: 5rem;
+    }
+
+    #main-page h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
     .bg-white { 
         padding: 50% 5% 0;
     }
@@ -119,20 +144,31 @@ a, a:visited, a:hover{
 
     h2 {
         font-size: 2rem;
-    }
-
-    .buttons {
-        margin: 0 auto;
-        text-align: center;
-        
-    }
-
-    .download-button {
-       margin: 1rem 0.5rem;
+        letter-spacing: 2px;
     }
 }
 
+@media (max-width: 400px) {
+    #main-page h1 {
+        font-size: 4.5rem;
+    }
 
+    #main-page h2 {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 330px) {
+    #main-page h1 {
+        font-size: 4.5rem;
+    }
+
+    #main-page h2 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+}
 
 /* About us section*/
 
@@ -197,40 +233,40 @@ a, a:visited, a:hover{
     filter: invert(100%);
 }
 
-.left {
+.left-carousel-arrow {
     margin-left: -200px;
 }
 
-.right {
+.right-carousel-arrow {
     margin-right: -200px;
 }
 
 @media (max-width: 1440px) {
-    .left {
+    .left-carousel-arrow {
         margin-left: -100px;
     }
     
-    .right {
+    .right-carousel-arrow {
         margin-right: -100px;
     }
 }
 
 @media (max-width: 1300px) {
-    .left {
+    .left-carousel-arrow {
         margin-left: -50px;
     }
     
-    .right {
+    .right-carousel-arrow {
         margin-right: -50px;
     }
 }
 
 @media (max-width: 600px) {
-    .left {
+    .left-carousel-arrow {
         margin-left: -30px;
     }
     
-    .right {
+    .right-carousel-arrow {
         margin-right: -30px;
     }
 }
@@ -253,6 +289,7 @@ a, a:visited, a:hover{
 }
 
 /* display 3 items */
+
 @media (min-width: 700px) {
     
     .carousel-inner .carousel-item-right.active,
@@ -271,16 +308,21 @@ a, a:visited, a:hover{
   transform: translateX(0);
 }
 
-.carousel-item {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+/* Make middle item colored and the rest are gray*/
+
+.carousel-item > div:first-child img,
+.carousel-item > div:nth-child(3) img {
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
 
-.carousel-item.active {
-    -webkit-filter: none; /* Safari 6.0 - 9.0 */
-    filter: none;
+@media (max-width: 700px) {
+    .carousel-item > div:first-child img,
+    .carousel-item > div:nth-child(3) img {
+        -webkit-filter: none; 
+        filter: none;
+    } 
 }
-
 
 /* Footer */
 
@@ -319,10 +361,10 @@ a.menu-link:hover:before {
     transform: scale(1.2);
 }
 
-/* Arrow up */
+/* Arrow - to the top */
 
 .to-top {
-    background: #6e6d6d;
+    background: #000000;
     position: fixed;
     bottom: 16px;
     right:32px;
@@ -339,12 +381,23 @@ a.menu-link:hover:before {
     pointer-events: none;
     transition: all .4s;
   }
-  
+ 
+@media (max-width:768px) {
+    .to-top {
+        height: 40px;
+        width: 40px;
+    }
+}  
+
 .to-top.active {
     bottom:32px;
     pointer-events: auto;
     opacity:1;
 }
 
+.to-top:hover {
+    background-color: #D80032;
+    transform: scale(1.1);
+}
 
 

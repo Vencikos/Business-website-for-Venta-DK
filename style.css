@@ -58,7 +58,35 @@ a, a:visited, a:hover{
     font-family: "Raleway";
     font-weight: 600;
     font-size: 1.2rem;
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}            
 
 .nav-link:hover {
     color: #2A98FF;
@@ -74,10 +102,13 @@ a, a:visited, a:hover{
     margin-right: 7rem;
 }
 
-
 .download-button {
     margin-top: 2rem;
     margin-right: 1rem; 
+}
+
+.download-button:hover {
+    background-color: #000;  
 }
 
 /* Main section */
@@ -355,12 +386,15 @@ a.menu-link:hover:before {
   }
 
 .social-icon {
-    padding: 10px;
+    margin: 10px;
 }
 
 .social-icon:hover {
     transform: scale(1.2);
+    color: #000;
 }
+
+
 
 /* Arrow - to the top */
 
